@@ -18,10 +18,14 @@ header {
     display: flex;
     align-items: center;
 }
-#cakelogo img {
+#cakelogo {
+    display: inline-block;
     width: 64px;
     height: 64px;
     margin-top: 10px;
+    background-image: url('../images/cakelogo.png');
+    background-size: cover;
+    background-position: center;
 }
 #logoText {
    color: #3E3F43;
@@ -62,7 +66,7 @@ nav a:hover {
 .top_section {
     height: 797px;
     flex-shrink: 0;
-    background-image: url('../img/centerbackground.jpg');
+    background-image: url('../images/centerbackground.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -160,6 +164,7 @@ h3 {
     flex-wrap: wrap;
     gap: 32px;
     margin-bottom: 32px;
+    justify-content: center;
 }
 .cake {
     display: flex;
@@ -217,7 +222,7 @@ h3 {
 }
 .heart {
     background-color: #EFECFF;
-    background-image: url("../img/hearticon.png");
+    background-image: url("../images/hearticon.png");
     width: 47px;
     height: 47px;
     top: 20px;
@@ -228,7 +233,7 @@ h3 {
 }
 .shoppingCart {
     background-color: #612999;
-    background-image: url("../img/shoppingcarticon.png");
+    background-image: url("../images/shoppingcarticon.png");
     width: 63px;
     height: 63px;
     bottom: 20px;
