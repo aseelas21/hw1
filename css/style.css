@@ -1,0 +1,318 @@
+/* i added some design steps that i learned alone :) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito';
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+}
+#container {
+    display: flex;
+    align-items: center;
+}
+#cakelogo img {
+    width: 64px;
+    height: 64px;
+    margin-top: 10px;
+}
+#logoText {
+   color: #3E3F43;
+   font-family: Nunito;
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+   letter-spacing: 6px;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #612999;
+    font-family: Nunito;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+nav a.active{ 
+    color: #612999;
+    font-family: Nunito;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-weight: bold; 
+}
+nav a:hover {
+    color: rgb(204, 38, 176);
+}
+.top_section {
+    height: 797px;
+    flex-shrink: 0;
+    background-image: url('../img/centerbackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Nunito;
+    font-style: normal;
+    line-height: normal;
+}
+.top_section h1 {
+    color: #612999;
+    font-size: 96px;
+    font-weight: 800;
+    width: 448px;
+    padding-left: 32px;
+    padding-top: 32px;
+}
+.top_section p {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    width: 448px;
+    padding-left: 32px;
+}
+h2 {
+    color: #612999;
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    margin: 32px 0;
+}
+#wrapper {
+    margin: 0 32px;
+}
+.about_section p {
+    color: #000;
+    text-align: justify;
+    font-family: Rubik;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.625%;
+    margin-bottom: 32px;
+}
+footer {
+    display: flex;
+    background: #EFECFF;
+    position:sticky;
+    bottom: 0px; 
+    max-width: 100%; 
+}
+.footer_item {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 32px;
+}
+h3 {
+    color: #333;
+    font-family: 'Nunito';
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+.footer_item a {
+    color: #333;
+    font-family: 'Nunito';
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+.footer_item span {
+    color: #333;
+    font-family: 'Nunito';
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.footer_contains {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+.footer_contains a {
+    margin-right: 24px;
+    color: #272D4E;
+}
+.footerIcons i {
+    fill: #272D4E;
+}
+.cakes_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+.cake {
+    display: flex;
+    flex-direction: column;
+    width: 376px;
+    height: 496px;
+    border-radius: 38px;
+    background: #EFECFF;
+    box-shadow: 0px 6px 40px 0px rgba(57, 132, 187, 0.05);
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.cake:hover { 
+    transform: scale(1.05);
+    box-shadow: 0px 12px 40px 0px rgba(57, 132, 187, 0.15); 
+}
+.cake img {
+    width: 376px;
+    height: 276px;
+    border-radius: 38px 38px 0 0;
+}
+.cake h4 {
+    color: #000;
+    text-align: justify;
+    font-family: Abel;
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 32px;
+    padding-top: 21px;
+}
+.cake p {
+    color: #333;
+    font-family: Abel;
+    font-size: 18px;
+    font-weight: 400;
+    width: 315px;
+    padding-top: 7px;
+    padding-left: 32px;
+}
+.cake .price {
+    color: #612999;
+    text-align: justify;
+    font-family: Abel;
+    font-size: 35px;
+    font-weight: 400;
+    margin-top: 13px;
+    margin-bottom: 36px;
+}
+.heart, .shoppingCart {
+    border-radius: 50%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.3s;
+}
+.heart {
+    background-color: #EFECFF;
+    background-image: url("../img/hearticon.png");
+    width: 47px;
+    height: 47px;
+    top: 20px;
+    right: 20px;
+}
+.heart:hover {
+    background-color: #FFCDD2;
+}
+.shoppingCart {
+    background-color: #612999;
+    background-image: url("../img/shoppingcarticon.png");
+    width: 63px;
+    height: 63px;
+    bottom: 20px;
+    right: 20px;
+}
+.shoppingCart:hover {
+    background-color: #9575CD;
+}
+ul {
+    list-style-type: none;
+}
+ul li {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    margin-bottom: 16px;
+}
+
+  /* page 2 */
+
+  .images_container {
+    display: flex;
+}
+
+.images_container img {
+    border: 4px solid #E6DBFE;
+    margin-right: 32px;
+    display: block;
+}
+.images_container .cake1 {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+#middimg {
+    width: 388.286px;
+height: 300px;
+flex-shrink: 0;
+}
+
+.images_container .cake3 {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+}
+.video video{
+    position: relative;
+    margin-bottom: 32px;
+    display: block;
+    margin-left: 32px;
+    margin-right: auto;
+    width: 1136px;
+    height: 503px;
+    flex-shrink: 0;
+}
+main h2{
+    margin-left: 32px;
+}
+.cake-item {
+    list-style-type: none;
+    margin-top: 16px;
+}
+.icon-container {
+    display: inline-block;
+    position: relative;
+    margin-left: 32px;
+    margin-right: 16px;
+    vertical-align: middle;
+}
+.rocket-icon {
+    width: 29px;
+    height: 42.385px;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+.circle-icon {
+    width: 82px;
+    height: 82px;
+    flex-shrink: 0;
+}
